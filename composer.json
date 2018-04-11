@@ -1,7 +1,7 @@
 {
     "name": "lvren007/arraytoexcel",
     "description": "php array to excel/html",
-    "type": "composer-plugin",
+    "type": "php-extension",
     "require": {
     },
     "authors": [
