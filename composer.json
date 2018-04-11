@@ -1,5 +1,5 @@
 {
-    "name": "lvren/arraytoexcel",
+    "name": "lvren007/arraytoexcel",
     "description": "php array to excel/html",
     "type": "composer-plugin",
     "require": {
