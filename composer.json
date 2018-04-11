@@ -1,0 +1,14 @@
+{
+    "name": "lvren/arraytoexcel",
+    "description": "php array to excel/html",
+    "type": "composer-plugin",
+    "require": {
+        "phpoffice/phpexcel": "1.8.0rc4"
+    },
+    "authors": [
+        {
+            "name": "wangjl",
+            "email": "wangjilei007@163.com"
+        }
+    ]
+}
