@@ -15,8 +15,8 @@ class ArrayToExcel {
     
     public function __construct()
     {
-//         require_once dirname(__FILE__) . '/PHPExcel-1.8/Classes/PHPExcel.php';
-        require dirname(__FILE__).'/../vendor/autoload.php';
+        require_once dirname(__FILE__).'./phpoffice/phpexcel/Classes/PHPExcel.php';
+//         require dirname(__FILE__).'/../vendor/autoload.php';
         // Create new PHPExcel object
         $this->objPHPExcel = new PHPExcel();
         // Set document properties
