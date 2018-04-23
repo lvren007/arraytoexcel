@@ -92,7 +92,7 @@ class ArrayToExcel {
         {
             $this->objSheet->setCellValue($this->toAZ($f).$this->position,$field);
             $this->objSheet->getStyle($this->toAZ($f).$this->position)->getFill()->setFillType(PHPExcel_Style_Fill::FILL_SOLID)->getStartColor()->setRGB('3399ff'); //设置标题背景颜色
-            $this->objSheet->getStyle($this->toAZ($f).$this->position)->applyFromArray(getBorderStyle("#66FF99")); //设置标题边框
+            $this->objSheet->getStyle($this->toAZ($f).$this->position)->applyFromArray($this->getBorderStyle("#66FF99")); //设置标题边框
             
         }
         $this->position++;
@@ -120,6 +120,22 @@ class ArrayToExcel {
                $d = json_encode($d);
         }
         $this->objSheet->setCellValue($this->toAZ($k).$this->position,$d);
+    }
+    
+    
+    /**
+     *获得不同颜色的边框
+     */
+    public function getBorderStyle($color){
+        $styleArray = array(
+            'borders' => array(
+                'outline' => array(
+                    'style' => PHPExcel_Style_Border::BORDER_THICK,
+                    'color' => array('rgb' => $color),
+                ),
+            ),
+        );
+        return $styleArray;
     }
     
     
@@ -210,17 +226,3 @@ class ArrayToExcel {
 }
 
 
-/*
- *获得不同颜色的边框
- */
-function getBorderStyle($color){
-    $styleArray = array(
-        'borders' => array(
-            'outline' => array(
-                'style' => PHPExcel_Style_Border::BORDER_THICK,
-                'color' => array('rgb' => $color),
-            ),
-        ),
-    );
-    return $styleArray;
-}
