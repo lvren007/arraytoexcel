@@ -6,7 +6,7 @@
     },
     "autoload":{
       "files":["src/ArrayToExcel.php"]
-    }
+    },
     "authors": [
         {
             "name": "wangjl",
