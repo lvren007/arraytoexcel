@@ -4,9 +4,7 @@
     "type": "php-extension",
     "require": {
     },
-    "autoload":{
-      "files":["src/ArrayToExcel.php"]
-    },
+    "classmap": ["src/"],
     "authors": [
         {
             "name": "wangjl",
