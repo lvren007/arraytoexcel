@@ -4,6 +4,9 @@
     "type": "php-extension",
     "require": {
     },
+    "autoload":{
+      "files":["src/ArrayToExcel.php"]
+    }
     "authors": [
         {
             "name": "wangjl",
